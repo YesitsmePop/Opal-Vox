@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/minecraftia">
+    <title>Minecraft.js</title>
+
+    <style>
+      @font-face {
+        font-family: "Minecraftia";
+        src: url('/fonts/Minecraftia-Regular.ttf') format('truetype');
+      }
+
+      body {
+        font-family: 'Minecraftia', sans-serif;
+      }
+
+    </style>
+
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <img class="crosshair" src="/textures/crosshair.png"></img>
+    <div class="itemtag" id="item" style="font-family: 'Minecraftia'">Pickaxe</div>
+    <div id="toolbar-container">
+      <div id="toolbar">
+        <img id="toolbar-1" src="/textures/pickaxe.png" class="toolbar-icon selected" />
+        <img id="toolbar-2" src="/textures/grass_side.png" class="toolbar-icon" />
+      </div>
+    </div>
+    <div id="info" style="font-family: 'Minecraftia'; font-size: 16px">
+      <div id="player-position"></div>
+      <div id="ore-stats"></div>
+    </div>
+    <div id="status"></div>
+
+    <div id="block-selection-container"></div>
+    <div id="itemtag-selector" class="item-selector" style="font-family: 'Minecraftia'">item</div>
+
+    <script type="module" src="/scripts/main.js"></script>
+  </body>
+</html>
